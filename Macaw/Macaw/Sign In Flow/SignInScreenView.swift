@@ -1,0 +1,268 @@
+//
+//  SignInScreenView.swift
+//  Macaw
+//
+//  Created by Jeff Licona on 12/11/21.
+//
+
+import SwiftUI
+import CryptoKit
+import AuthenticationServices
+import FirebaseAuth
+import Firebase
+import GoogleSignIn
+
+struct SignInScreenView: View {
+    @Environment(\.userSignIn) private var userSignIn: Binding<Bool>
+    @State var nonce = ""
+    @State private var switchView = false
+    
+    
+    func authenticate(credential: ASAuthorizationAppleIDCredential) {
+        
+        // getting Token...
+        guard let token = credential.identityToken else {
+            print("error with Firebase")
+            
+            return
+        }
+        
+        // Token String...
+        guard let tokenString = String(data: token, encoding: .utf8) else {
+            print("error with Token")
+            return
+        }
+        
+        let firebaseCredential = OAuthProvider.credential(withProviderID: "apple.com", idToken: tokenString, rawNonce: nonce)
+        
+        Auth.auth().signIn(with: firebaseCredential) { (result, err) in
+            if let error = err {
+                print(error.localizedDescription)
+                return
+            }
+            
+            // User successfully logged into Firebase
+            print("Logged in Success")
+            
+            // Directing user to Main page...
+            self.userSignIn.wrappedValue = true
+            
+            switchView = self.userSignIn.wrappedValue
+            
+            
+        }
+    }
+    
+    var body: some View {
+        
+        if switchView {
+            MainView()
+        } else {
+            
+            VStack {
+                Text("Sign in")
+                    .foregroundColor(.black)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .offset(y: -70)
+                
+                
+                VStack(spacing: 45) {
+                    
+                    // Apple Sign in
+                    
+                    SignInWithAppleButton { (request) in
+                        
+                        nonce = randomNonceString()
+                        
+                        request.requestedScopes = [.email, .fullName]
+                        request.nonce = sha256(nonce)
+                        
+                    } onCompletion: { (result) in
+                        
+                        // getting error or success...
+                        
+                        switch result {
+                        case .success(let user):
+                            
+                            
+                            print("Signed in with Apple.")
+                            
+                            
+                            // Do login with Firebase...
+                            guard let credential = user.credential as? ASAuthorizationAppleIDCredential else {
+                                print("error with firebase")
+                                return
+                            }
+                            
+                            authenticate(credential: credential)
+                        case.failure(let error):
+                            print(error.localizedDescription)
+                        }
+                    }
+                    .frame(width: 300, height: 50)
+                    
+                    
+                    // Google Sign in
+                    
+                    Button {
+                        
+                        handleSignin()
+                        
+                    } label: {
+                        HStack(spacing: 15) {
+                            Image("google")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 40, height: 40)
+                                .padding(.trailing)
+                            
+                            
+                            Text("Sign in with Google")
+                                .font(.title3)
+                                .foregroundColor(.black)
+                        }
+                    }
+                    .frame(width: 300, height: 50)
+                    .background(Color.white)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.black, lineWidth: 0.70)
+                    )
+                    
+                    
+                    // E-mail Sign in
+                    
+                    NavigationLink (destination: SignInWithEmailView()) {
+                        HStack {
+                            Spacer()
+                            Image(systemName:"envelope").imageScale(.large)
+                                .padding(.trailing)
+                                .foregroundColor(.black)
+                            
+                            Text("Sign in with Email")
+                                .font(.title3)
+                                .foregroundColor(.black)
+                            Spacer()
+                        }
+                        .frame(width: 300, height: 50)
+                        .background(Color.white)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.black, lineWidth: 0.70)
+                        )
+                    }
+                }
+                
+                // Terms Text...
+                Text(getAttributedString(string: "By continuing, you agree to the our Terms of Service"))
+                // Need to add files for Terms of Service
+                    .font(.body)
+                    .foregroundColor(.gray)
+                    .kerning(1.1)
+                    .lineSpacing(8)
+                    .multilineTextAlignment(.center)
+                    .offset(y: 170)
+                
+            }
+            .onAppear {
+                switchView = self.userSignIn.wrappedValue
+            }
+        }
+    }
+    
+    
+    // Attributted String..
+    func getAttributedString(string: String) -> AttributedString {
+        
+        var attributedString = AttributedString(string)
+        
+        // Applying Black color and Bold to only Terms of Service text...
+        if let range = attributedString.range(of: "Terms of Service") {
+            attributedString[range].foregroundColor = .black
+            //            attributedString[range].font = .body.bold()
+        }
+        return attributedString
+    }
+    
+    // handle Signin...
+    func handleSignin() {
+        
+        // Google Sign in...
+        
+        guard let clientID = FirebaseApp.app()?.options.clientID else { return }
+        
+        // Create Google Sign In configuration object.
+        let config = GIDConfiguration(clientID: clientID)
+        
+        GIDSignIn.sharedInstance.signIn(with: config, presenting: getRootViewController()) { [self] user, error in
+            
+            if let error = error {
+                print(error.localizedDescription)
+                
+                return
+            }
+            
+            guard
+                let authentication = user?.authentication,
+                let idToken = authentication.idToken
+            else {
+                return
+            }
+            
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken,
+                                                           accessToken: authentication.accessToken)
+            
+            // Firebase Auth...
+            
+            Auth.auth().signIn(with: credential) { result, err in
+                
+                if let error = error {
+                    print(error.localizedDescription)
+                    return
+                }
+                
+                //Displaying User Name...
+                guard let user = result?.user else {
+                    return
+                }
+                
+                
+                // User succesfully logged into Firebase...
+                print(user.displayName ?? "Success!")
+                
+                // Directing user to Main page...
+                self.userSignIn.wrappedValue = true
+                
+                switchView = self.userSignIn.wrappedValue
+                
+            }
+        }
+    }
+}
+
+struct SignInScreenView_Previews: PreviewProvider {
+    static var previews: some View {
+        SignInScreenView()
+    }
+}
+
+
+// Extending View to get screen bounds...
+extension View {
+    func getRect() -> CGRect {
+        return UIScreen.main.bounds
+    }
+    
+    // Retreiving RootView Controller
+    func getRootViewController() -> UIViewController {
+        guard let screen = UIApplication.shared.connectedScenes.first as? UIWindowScene else {
+            return .init()
+        }
+        
+        guard let root = screen.windows.first?.rootViewController else {
+            return .init()
+        }
+        return root
+    }
+}
