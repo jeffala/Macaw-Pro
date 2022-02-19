@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>584959891897-e5fda24536bnq6d74f3cb2trs08k4i16.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.584959891897-e5fda24536bnq6d74f3cb2trs08k4i16</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBVZA3t-HYt46MUorL1eP8KOtFw9EXy3VQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>584959891897</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.macawsw.macawpro</string>
+	<key>PROJECT_ID</key>
+	<string>macaw-pro</string>
+	<key>STORAGE_BUCKET</key>
+	<string>macaw-pro.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:584959891897:ios:47b113c94cc51782383e68</string>
+</dict>
+</plist>

@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		421C76A42769752600BBD089 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 421C76A32769752600BBD089 /* GoogleService-Info.plist */; };
+		421C76A9276976ED00BBD089 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 421C76A8276976ED00BBD089 /* FirebaseAuth */; };
+		4225653427B8705E00C18CCD /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4225653327B8705E00C18CCD /* FirebaseFirestoreSwift-Beta */; };
+		4225653827B8769700C18CCD /* ProfileListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225653727B8769700C18CCD /* ProfileListView.swift */; };
+		4230344927714C2700CE02D5 /* AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230344827714C2700CE02D5 /* AppointmentsView.swift */; };
+		4230344B27714C7300CE02D5 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230344A27714C7300CE02D5 /* AccountView.swift */; };
+		4230344D27714CAF00CE02D5 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230344C27714CAF00CE02D5 /* StatsView.swift */; };
+		4251BA0227AEF99A00CDC44D /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251BA0127AEF99A00CDC44D /* EditProfileView.swift */; };
+		4258F18E279DE9A000193729 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4258F18D279DE9A000193729 /* FirebaseFirestore */; };
+		4261612527619B8B007261F1 /* SignInWithEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261612427619B8B007261F1 /* SignInWithEmailView.swift */; };
+		426FC62F276AF9DD008AE6A5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426FC62E276AF9DD008AE6A5 /* MainView.swift */; };
+		42860DD02756FB60000D3CF8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42860DCF2756FB60000D3CF8 /* Launch Screen.storyboard */; };
+		428FA03D274AB8710032589B /* Macaw_ProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FA03C274AB8710032589B /* Macaw_ProApp.swift */; };
+		428FA041274AB8720032589B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428FA040274AB8720032589B /* Assets.xcassets */; };
+		428FA044274AB8720032589B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428FA043274AB8720032589B /* Preview Assets.xcassets */; };
+		429228C127B086F100606251 /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429228C027B086F100606251 /* UserProfileModel.swift */; };
+		42BDE31A277D422500057514 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 42BDE319277D422500057514 /* GoogleSignIn */; };
+		42BEA254275D66C300EC64A3 /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BEA253275D66C300EC64A3 /* WelcomeScreenView.swift */; };
+		42BEA25A275DA3E100EC64A3 /* SignInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BEA259275DA3E100EC64A3 /* SignInScreenView.swift */; };
+		42D254A3276EE2C30089871F /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D254A2276EE2C30089871F /* SignInModel.swift */; };
+		42D804B427BF44AC00934DE0 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D804B327BF44AC00934DE0 /* EditProfileViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		421C76A32769752600BBD089 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4225653727B8769700C18CCD /* ProfileListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileListView.swift; sourceTree = "<group>"; };
+		4230344827714C2700CE02D5 /* AppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsView.swift; sourceTree = "<group>"; };
+		4230344A27714C7300CE02D5 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		4230344C27714CAF00CE02D5 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		4251BA0127AEF99A00CDC44D /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
+		425FB97A27650AAA00A3EDCD /* Macaw-Pro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Macaw-Pro-Info.plist"; path = "Macaw Pro/Macaw-Pro-Info.plist"; sourceTree = SOURCE_ROOT; };
+		4261612427619B8B007261F1 /* SignInWithEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithEmailView.swift; sourceTree = "<group>"; };
+		426FC62E276AF9DD008AE6A5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		42860DCF2756FB60000D3CF8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		428FA039274AB8710032589B /* Macaw Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Macaw Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		428FA03C274AB8710032589B /* Macaw_ProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macaw_ProApp.swift; sourceTree = "<group>"; };
+		428FA040274AB8720032589B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		428FA043274AB8720032589B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		429228C027B086F100606251 /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
+		42BEA253275D66C300EC64A3 /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
+		42BEA259275DA3E100EC64A3 /* SignInScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenView.swift; sourceTree = "<group>"; };
+		42D254A2276EE2C30089871F /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
+		42D804B327BF44AC00934DE0 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		42DE200B27697FF000C71B8F /* Macaw Pro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Macaw Pro.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		428FA036274AB8710032589B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4258F18E279DE9A000193729 /* FirebaseFirestore in Frameworks */,
+				4225653427B8705E00C18CCD /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				421C76A9276976ED00BBD089 /* FirebaseAuth in Frameworks */,
+				42BDE31A277D422500057514 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4251BA0027AEF95700CDC44D /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				4251BA0127AEF99A00CDC44D /* EditProfileView.swift */,
+				42D804B327BF44AC00934DE0 /* EditProfileViewModel.swift */,
+				4225653727B8769700C18CCD /* ProfileListView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		4258F192279F373100193729 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42D254A2276EE2C30089871F /* SignInModel.swift */,
+				429228C027B086F100606251 /* UserProfileModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		42759CF7278A3D6100668B55 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				426FC62E276AF9DD008AE6A5 /* MainView.swift */,
+				4230344827714C2700CE02D5 /* AppointmentsView.swift */,
+				4230344C27714CAF00CE02D5 /* StatsView.swift */,
+				4230344A27714C7300CE02D5 /* AccountView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		428FA030274AB8710032589B = {
+			isa = PBXGroup;
+			children = (
+				428FA03B274AB8710032589B /* Macaw Pro */,
+				428FA03A274AB8710032589B /* Products */,
+				42D41A552793806C00ECB394 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		428FA03A274AB8710032589B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				428FA039274AB8710032589B /* Macaw Pro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		428FA03B274AB8710032589B /* Macaw Pro */ = {
+			isa = PBXGroup;
+			children = (
+				42DE200B27697FF000C71B8F /* Macaw Pro.entitlements */,
+				421C76A32769752600BBD089 /* GoogleService-Info.plist */,
+				425FB97A27650AAA00A3EDCD /* Macaw-Pro-Info.plist */,
+				428FA03C274AB8710032589B /* Macaw_ProApp.swift */,
+				42F63BB727B35B0400EBD640 /* Views */,
+				4258F192279F373100193729 /* Models */,
+				428FA040274AB8720032589B /* Assets.xcassets */,
+				428FA042274AB8720032589B /* Preview Content */,
+			);
+			path = "Macaw Pro";
+			sourceTree = "<group>";
+		};
+		428FA042274AB8720032589B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				428FA043274AB8720032589B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		42BEA258275D9ED000EC64A3 /* Launch and Sign In */ = {
+			isa = PBXGroup;
+			children = (
+				42860DCF2756FB60000D3CF8 /* Launch Screen.storyboard */,
+				42BEA253275D66C300EC64A3 /* WelcomeScreenView.swift */,
+				42BEA259275DA3E100EC64A3 /* SignInScreenView.swift */,
+				4261612427619B8B007261F1 /* SignInWithEmailView.swift */,
+			);
+			path = "Launch and Sign In";
+			sourceTree = "<group>";
+		};
+		42D41A552793806C00ECB394 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42F63BB727B35B0400EBD640 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				42BEA258275D9ED000EC64A3 /* Launch and Sign In */,
+				42759CF7278A3D6100668B55 /* MainViews */,
+				4251BA0027AEF95700CDC44D /* ProfileView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		428FA038274AB8710032589B /* Macaw Pro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 428FA047274AB8720032589B /* Build configuration list for PBXNativeTarget "Macaw Pro" */;
+			buildPhases = (
+				428FA035274AB8710032589B /* Sources */,
+				428FA036274AB8710032589B /* Frameworks */,
+				428FA037274AB8710032589B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Macaw Pro";
+			packageProductDependencies = (
+				421C76A8276976ED00BBD089 /* FirebaseAuth */,
+				42BDE319277D422500057514 /* GoogleSignIn */,
+				4258F18D279DE9A000193729 /* FirebaseFirestore */,
+				4225653327B8705E00C18CCD /* FirebaseFirestoreSwift-Beta */,
+			);
+			productName = "Macaw Pro";
+			productReference = 428FA039274AB8710032589B /* Macaw Pro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		428FA031274AB8710032589B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					428FA038274AB8710032589B = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 428FA034274AB8710032589B /* Build configuration list for PBXProject "Macaw Pro" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 428FA030274AB8710032589B;
+			packageReferences = (
+				421C76A5276976ED00BBD089 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				42BDE318277D422500057514 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 428FA03A274AB8710032589B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				428FA038274AB8710032589B /* Macaw Pro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		428FA037274AB8710032589B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42860DD02756FB60000D3CF8 /* Launch Screen.storyboard in Resources */,
+				428FA044274AB8720032589B /* Preview Assets.xcassets in Resources */,
+				421C76A42769752600BBD089 /* GoogleService-Info.plist in Resources */,
+				428FA041274AB8720032589B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		428FA035274AB8710032589B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				426FC62F276AF9DD008AE6A5 /* MainView.swift in Sources */,
+				42D804B427BF44AC00934DE0 /* EditProfileViewModel.swift in Sources */,
+				42D254A3276EE2C30089871F /* SignInModel.swift in Sources */,
+				4261612527619B8B007261F1 /* SignInWithEmailView.swift in Sources */,
+				429228C127B086F100606251 /* UserProfileModel.swift in Sources */,
+				4251BA0227AEF99A00CDC44D /* EditProfileView.swift in Sources */,
+				42BEA254275D66C300EC64A3 /* WelcomeScreenView.swift in Sources */,
+				428FA03D274AB8710032589B /* Macaw_ProApp.swift in Sources */,
+				4225653827B8769700C18CCD /* ProfileListView.swift in Sources */,
+				4230344D27714CAF00CE02D5 /* StatsView.swift in Sources */,
+				4230344B27714C7300CE02D5 /* AccountView.swift in Sources */,
+				4230344927714C2700CE02D5 /* AppointmentsView.swift in Sources */,
+				42BEA25A275DA3E100EC64A3 /* SignInScreenView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		428FA045274AB8720032589B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		428FA046274AB8720032589B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		428FA048274AB8720032589B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Macaw Pro/Macaw Pro.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Macaw Pro/Preview Content\"";
+				DEVELOPMENT_TEAM = 3CLC3T65R4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Macaw-Pro-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macawsw.macawpro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		428FA049274AB8720032589B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Macaw Pro/Macaw Pro.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Macaw Pro/Preview Content\"";
+				DEVELOPMENT_TEAM = 3CLC3T65R4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Macaw-Pro-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.macawsw.macawpro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		428FA034274AB8710032589B /* Build configuration list for PBXProject "Macaw Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428FA045274AB8720032589B /* Debug */,
+				428FA046274AB8720032589B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		428FA047274AB8720032589B /* Build configuration list for PBXNativeTarget "Macaw Pro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428FA048274AB8720032589B /* Debug */,
+				428FA049274AB8720032589B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		421C76A5276976ED00BBD089 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		42BDE318277D422500057514 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		421C76A8276976ED00BBD089 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 421C76A5276976ED00BBD089 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		4225653327B8705E00C18CCD /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 421C76A5276976ED00BBD089 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		4258F18D279DE9A000193729 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 421C76A5276976ED00BBD089 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		42BDE319277D422500057514 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42BDE318277D422500057514 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 428FA031274AB8710032589B /* Project object */;
+}
