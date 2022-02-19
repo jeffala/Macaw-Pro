@@ -20,7 +20,7 @@ struct Macaw_ProApp: App {
 //            WelcomeScreenView()
 //                .environment(\.userSignIn, $userSignIn)
 //            }
-            EditProfileView()
+            WelcomeScreenView()
         }
     }
 

@@ -10,9 +10,9 @@ import GoogleSignIn
 
 struct SignInScreenView: View {
     @Environment(\.userSignIn) private var userSignIn: Binding<Bool>
-    @State var nonce = ""
-    @State var switchView = false
+    @StateObject private var viewModel = SignInScreenViewModel()
 
+    
     
     func authenticate(credential: ASAuthorizationAppleIDCredential) {
         
@@ -30,7 +30,7 @@ struct SignInScreenView: View {
         
         let firebaseCredential = OAuthProvider.credential(withProviderID: "apple.com",
                                                           idToken: tokenString,
-                                                          rawNonce: nonce)
+                                                          rawNonce: viewModel.nonce)
         
         Auth.auth().signIn(with: firebaseCredential) { (result, err) in
             if let error = err {
@@ -44,7 +44,7 @@ struct SignInScreenView: View {
             // Directing user to Main page...
             self.userSignIn.wrappedValue = true
             
-            switchView = self.userSignIn.wrappedValue
+            viewModel.switchView = self.userSignIn.wrappedValue
             
             
         }
@@ -52,7 +52,7 @@ struct SignInScreenView: View {
     
     var body: some View {
         
-        if switchView {
+        if viewModel.switchView {
             MainView()
         } else {
             VStack {
@@ -62,17 +62,16 @@ struct SignInScreenView: View {
                     .fontWeight(.bold)
                     .offset(y: -70)
                 
-                
                 VStack(spacing: 45) {
                     
                     // Apple Sign in
                     
                     SignInWithAppleButton { (request) in
                         
-                        nonce = randomNonceString()
+                        viewModel.nonce = viewModel.randomNonceString()
                         
                         request.requestedScopes = [.email, .fullName]
-                        request.nonce = sha256(nonce)
+                        request.nonce = viewModel.sha256(viewModel.nonce)
                         
                     } onCompletion: { (result) in
                         
@@ -152,7 +151,7 @@ struct SignInScreenView: View {
                 }
                 
                 // Terms Text...
-                Text(getAttributedString(string: "By continuing, you agree to the our Terms of Service"))
+                Text(viewModel.getAttributedString(string: "By continuing, you agree to the our Terms of Service"))
                 // Need to add files for Terms of Service
                     .font(.body)
                     .foregroundColor(.gray)
@@ -163,23 +162,9 @@ struct SignInScreenView: View {
                 
             }
             .onAppear {
-                switchView = self.userSignIn.wrappedValue
+                viewModel.switchView = self.userSignIn.wrappedValue
             }
         }
-    }
-    
-    
-    // Attributted String..
-    func getAttributedString(string: String) -> AttributedString {
-        
-        var attributedString = AttributedString(string)
-        
-        // Applying Black color and Bold to only Terms of Service text...
-        if let range = attributedString.range(of: "Terms of Service") {
-            attributedString[range].foregroundColor = .black
-            //            attributedString[range].font = .body.bold()
-        }
-        return attributedString
     }
     
     
@@ -233,7 +218,7 @@ struct SignInScreenView: View {
                 userSignIn.wrappedValue = true
                 
                 // Taking user to MainView
-                switchView = self.userSignIn.wrappedValue
+                viewModel.switchView = self.userSignIn.wrappedValue
                 
             }
         }

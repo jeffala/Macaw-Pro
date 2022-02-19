@@ -21,17 +21,15 @@ struct WelcomeScreenView: View {
                             .bold()
                             .foregroundColor(Color.black).opacity(0.7)
                         
-                        Spacer().frame(height: 150)
+                        Spacer().frame(height: 60)
                         
                         
                         NavigationLink(destination: SignInScreenView().environment(\.userSignIn, userSignIn)) {
                             PrimaryButton(title: "Get Started")
-                                .padding(.bottom)
-                                .padding(.bottom)
-                                .padding(.bottom)
-                                .padding(.bottom)
-                                .padding()
                         }
+                        .padding()
+                        
+                        Spacer().frame(height: 180)
                         
                         VStack {
                             Text("Need to book an appointment? Use Macaw")
