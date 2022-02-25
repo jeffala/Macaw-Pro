@@ -12,7 +12,7 @@ struct EditProfileView: View {
     var body: some View {
         NavigationView {
             Form {
-                Section {
+                Section("Your Information") {
                     TextField("First Name", text: $viewModel.user.firstName)
                     TextField("Last Name", text: $viewModel.user.lastName)
                     DatePicker("Birthdate", selection: $viewModel.user.birthdate, displayedComponents: .date)
@@ -24,10 +24,9 @@ struct EditProfileView: View {
                             Text(value)
                         }
                     }
-                } header: {
-                    Text("Your information")
                 }
-                Section {
+                
+                Section("Business Information") {
                     TextField("Business Name", text: $viewModel.user.bizName)
                     TextField("Street", text: $viewModel.user.street)
                     TextField("Apartment or Unit #", text: $viewModel.user.apartmntOrUnitNum)
@@ -38,24 +37,22 @@ struct EditProfileView: View {
                         }
                     }
                     TextField("Zip Code", text: $viewModel.user.zipCode)
-                } header: {
-                    Text("business information")
                 }
+            }
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard, content: {
+                    Spacer()
+                    Button("Done", action: {
+                        hideKeyboard()
+                    })
+                })
+                ToolbarItemGroup(placement: .navigationBarTrailing, content: {
+                    Button("Save", action: {
+                        viewModel.saveData()
+                    })
+                })
             }
             .navigationTitle("Edit Profile")
-            .toolbar {
-                ToolbarItemGroup(placement: .keyboard) {
-                    Spacer()
-                    Button("Done") {
-                        hideKeyboard()
-                    }
-                }
-                ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    Button("Save") {
-                    viewModel.saveData()
-                    }
-                }
-            }
         }
     }
 }
