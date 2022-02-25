@@ -8,8 +8,14 @@ import GoogleSignIn
 struct Macaw_ProApp: App {
     @AppStorage("userSignIn") private var userSignIn: Bool = false
     
+    
     init() {
         FirebaseApp.configure()
+        
+        
+        // Dealing with outdated UI Constraints warnings
+        UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
+
     }
         
     var body: some Scene {
