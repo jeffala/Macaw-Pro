@@ -18,7 +18,7 @@ jobs:
       run: sudo xcode-select -switch /Applications/Xcode_13.2.1.app
     
     - name: Build
-      run: xcodebuild Macaw-Pro-iOS/MacawPro.xcodeproj
+      run: xcodebuild Macaw-Pro-iOS/Macaw Pro.xcodeproj -scheme
 
 #     - name: Run tests
 #       run: swift test -v
