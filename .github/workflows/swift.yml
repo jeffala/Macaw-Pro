@@ -1,4 +1,4 @@
-name: Swift
+name: CI
 
 on:
   push:
@@ -7,13 +7,17 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  build-only:
 
     runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v2
+    
+    - name: Select Xcode
+      run: sudo xcode-select -switch /Applications_Xcode_13.2.1.app
+    
     - name: Build
-      run: swift build -v
+      run: xcodebuild App/Macaw Pro.xcodeproj 
 #     - name: Run tests
 #       run: swift test -v
