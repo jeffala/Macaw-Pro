@@ -1,42 +1,34 @@
 
-//  EditProfileView.swift
+//  EditAccountView.swift
 
 
 import SwiftUI
 
 
-struct EditProfileView: View {
-    @StateObject private var viewModel = EditProfileViewModel()
+struct EditAccountView: View {
+    @StateObject private var viewModel = EditAccountViewModel()
     
     
     var body: some View {
         NavigationView {
             Form {
-                Section("Your Information") {
+                Section("Profile") {
                     TextField("First Name", text: $viewModel.user.firstName)
                     TextField("Last Name", text: $viewModel.user.lastName)
-                    DatePicker("Birthdate", selection: $viewModel.user.birthdate, displayedComponents: .date)
-                    TextField("Profession", text: $viewModel.user.proType)
-                    TextField("Email", text: $viewModel.user.email)
-                        .autocapitalization(.none)
                     Picker("Gender", selection: $viewModel.user.gender) {
                         ForEach(viewModel.user.genderOptions, id: \.self) { value in
                             Text(value)
                         }
                     }
+                    TextField("Email", text: $viewModel.user.email)
+                    TextField("Profession", text: $viewModel.user.proType)
+                        .autocapitalization(.none)
                 }
                 
-                Section("Business Information") {
-                    TextField("Business Name", text: $viewModel.user.bizName)
-                    TextField("Street", text: $viewModel.user.street)
-                    TextField("Apartment or Unit #", text: $viewModel.user.apartmntOrUnitNum)
-                    TextField("City", text: $viewModel.user.city)
-                    Picker("State", selection: $viewModel.user.state) {
-                        ForEach(viewModel.user.stateArray, id: \.self) { value in
-                            Text(value)
-                        }
-                    }
-                    TextField("Zip Code", text: $viewModel.user.zipCode)
+                Section("Service 1") {
+                        TextField("Service Name", text: $viewModel.user.service1Name)
+                        TextField("Price", value: $viewModel.user.service1Price, formatter: NumberFormatter())
+                            .keyboardType(.decimalPad)
                 }
             }
             .toolbar {
@@ -52,7 +44,7 @@ struct EditProfileView: View {
                     })
                 })
             }
-            .navigationTitle("Edit Profile")
+            .navigationTitle("Edit Account")
         }
     }
 }
@@ -60,7 +52,7 @@ struct EditProfileView: View {
 
 struct EditProfileInfoView_Previews: PreviewProvider {
     static var previews: some View {
-        EditProfileView()
+        EditAccountView()
     }
 }
 

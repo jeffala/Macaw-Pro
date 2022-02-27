@@ -10,7 +10,7 @@ import Firebase
 import FirebaseFirestore
 
 
-class EditProfileViewModel: ObservableObject {
+class EditAccountViewModel: ObservableObject {
     @Published var user = User()
     private var db = Firestore.firestore()
     
@@ -18,19 +18,11 @@ class EditProfileViewModel: ObservableObject {
         db.collection("Users").document().setData([
             "First Name": user.firstName,
             "Last Name": user.lastName,
-            "Birth Date": user.birthdate,
             "Gender": user.gender,
             "Profession": user.proType,
             "Email": user.email,
-            "Place of Business": [
-                "Business Name": user.bizName,
-                "Address": [
-                    "Street": user.street,
-                    "Apt or Unit #": user.apartmntOrUnitNum,
-                    "City": user.city,
-                    "State": user.state,
-                    "Zip Code": user.zipCode
-                ]
+            "Services": [
+                user.service1Name : user.service1Price
             ]
         ]) { err in
             if let err = err {
@@ -39,5 +31,5 @@ class EditProfileViewModel: ObservableObject {
                 print("Document sucessfully written!")
             }
         }
-    }    
+    }
 }
