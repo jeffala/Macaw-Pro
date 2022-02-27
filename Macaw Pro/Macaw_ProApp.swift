@@ -12,7 +12,6 @@ struct Macaw_ProApp: App {
     init() {
         FirebaseApp.configure()
         
-        
         // Dealing with outdated UI Constraints warnings
         UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
 
@@ -26,7 +25,7 @@ struct Macaw_ProApp: App {
 //            WelcomeScreenView()
 //                .environment(\.userSignIn, $userSignIn)
 //            }
-            EditProfileView()
+            EditAccountView()
         }
     }
 
