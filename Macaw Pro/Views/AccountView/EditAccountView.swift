@@ -1,6 +1,4 @@
 
-//  EditAccountView.swift
-
 
 import SwiftUI
 
@@ -25,10 +23,49 @@ struct EditAccountView: View {
                         .autocapitalization(.none)
                 }
                 
-                Section("Service 1") {
-                        TextField("Service Name", text: $viewModel.user.service1Name)
-                        TextField("Price", value: $viewModel.user.service1Price, formatter: NumberFormatter())
-                            .keyboardType(.decimalPad)
+                Section("Services") {
+                    TextField("Name of Service", text: $viewModel.services.service1Name)
+                    TextField("Price of Service", value: $viewModel.services.service1Price, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                        .keyboardType(.decimalPad)
+                    
+                    TextField("Name of Service", text: $viewModel.services.service2Name)
+                    TextField("Price of Service", value: $viewModel.services.service2Price, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                        .keyboardType(.decimalPad)
+                    
+                    TextField("Name of Service", text: $viewModel.services.service3Name)
+                    TextField("Price of Service", value: $viewModel.services.service3Price, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                        .keyboardType(.decimalPad)
+                    
+                    TextField("Name of Service", text: $viewModel.services.service4Name)
+                    TextField("Price of Service", value: $viewModel.services.service4Price, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                        .keyboardType(.decimalPad)
+                    
+                    TextField("Name of Service", text: $viewModel.services.service5Name)
+                    TextField("Price of Service", value: $viewModel.services.service5Price, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                        .keyboardType(.decimalPad)
+                }
+                
+                // Due to 10 textfield limit per Section = new Section
+                Section("More Services") {
+                    TextField("Name of Service", text: $viewModel.services.service6Name)
+                    TextField("Price of Service", value: $viewModel.services.service6Price, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                        .keyboardType(.decimalPad)
+                    
+                    TextField("Name of Service", text: $viewModel.services.service7Name)
+                    TextField("Price of Service", value: $viewModel.services.service7Price, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                        .keyboardType(.decimalPad)
+                    
+                    TextField("Name of Service", text: $viewModel.services.service8Name)
+                    TextField("Price of Service", value: $viewModel.services.service8Price, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                        .keyboardType(.decimalPad)
+                    
+                    TextField("Name of Service", text: $viewModel.services.service9Name)
+                    TextField("Price of Service", value: $viewModel.services.service9Price, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                        .keyboardType(.decimalPad)
+                    
+                    TextField("Name of Service", text: $viewModel.services.service10Name)
+                    TextField("Price of Service", value: $viewModel.services.service10Price, format: .currency(code: Locale.current.currencyCode ?? "USD"))
+                        .keyboardType(.decimalPad)
                 }
             }
             .toolbar {
