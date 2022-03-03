@@ -9,7 +9,7 @@ struct AccountView: View {
     @Environment(\.userSignIn) private var userSignIn: Binding<Bool>
     @State private var isLoggedOut = false
     
-    var user: User = User(id: "000", firstName: "Jeff", lastName: "Licona", gender: "Male", proType: "Barber", email: "k=jdfd", service1Name: "Pickle Slap", service1Price: 100)
+//    var user: User = User(id: "000", firstName: "Jeff", lastName: "Licona", gender: "Male", proType: "Barber", email: "k=jdfd", service1Name: "Pickle Slap", service1Price: 100)
         
     
     var body: some View {
@@ -23,10 +23,10 @@ struct AccountView: View {
                         .redacted(reason: .placeholder)
                     
                     VStack(spacing: 8) {
-                        Text("\(user.firstName + " " + user.lastName)")
-                            .font(.headline)
-                        Text("\(user.proType)")
-                            .font(.subheadline)
+//                        Text("\(user.firstName + " " + user.lastName)")
+//                            .font(.headline)
+//                        Text("\(user.proType)")
+//                            .font(.subheadline)
                     }
                 }
                 Text("Services")
