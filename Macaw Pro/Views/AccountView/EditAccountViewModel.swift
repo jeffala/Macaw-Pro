@@ -48,11 +48,11 @@ class EditAccountViewModel: ObservableObject {
                 "service8Name" : services.service8Name,
                 "service8Price" : services.service8Price,
                 
-                "service8Name" : services.service9Name,
-                "service8Price" : services.service9Price,
+                "service9Name" : services.service9Name,
+                "service9Price" : services.service9Price,
                 
-                "service8Name" : services.service10Name,
-                "service8Price" : services.service10Price
+                "service10Name" : services.service10Name,
+                "service10Price" : services.service10Price
             ]
         ]) { err in
             if let err = err {
