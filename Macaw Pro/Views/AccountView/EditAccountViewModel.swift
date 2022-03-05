@@ -1,9 +1,3 @@
-//
-//  EditProfileViewModel.swift
-//  Macaw Pro
-//
-//  Created by Jeff Licona on 2/17/22.
-//
 
 import Foundation
 import Firebase
@@ -63,3 +57,4 @@ class EditAccountViewModel: ObservableObject {
         }
     }
 }
+

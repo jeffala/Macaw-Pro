@@ -25,7 +25,7 @@ struct Macaw_ProApp: App {
 //            WelcomeScreenView()
 //                .environment(\.userSignIn, $userSignIn)
 //            }
-            EditAccountView()
+            AccountView()
         }
     }
 

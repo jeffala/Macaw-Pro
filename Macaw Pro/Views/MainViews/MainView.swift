@@ -20,8 +20,8 @@ struct MainView: View {
                 
                 AccountView()
                     .tabItem {
-                        Image(systemName: "ellipsis")
-                        Text("More")
+                        Image(systemName: "person")
+                        Text("Account")
                     }
             }
             .navigationBarBackButtonHidden(true)
