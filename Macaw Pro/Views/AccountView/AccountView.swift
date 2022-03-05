@@ -15,6 +15,7 @@ struct AccountView: View {
     
     
     var user: User = User(id: "000", firstName: "Jeff", lastName: "Licona", gender: "Male", genderOptions: ["Male", "Female", "Decline to answer"], proType: "Barber", email: "jeffalalg94@gmail.com")
+
         
     
     var body: some View {
@@ -34,6 +35,7 @@ struct AccountView: View {
                         Text("\(user.firstName + " " + user.lastName)")
                         
                         Text("\(user.proType)")
+
                     }
                 }
                 Text("My Services")
