@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		42188D1427C18DE7008DE27C /* SignInScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42188D1327C18DE7008DE27C /* SignInScreenViewModel.swift */; };
-		421C76A42769752600BBD089 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 421C76A32769752600BBD089 /* GoogleService-Info.plist */; };
 		421C76A9276976ED00BBD089 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 421C76A8276976ED00BBD089 /* FirebaseAuth */; };
 		4225653427B8705E00C18CCD /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4225653327B8705E00C18CCD /* FirebaseFirestoreSwift-Beta */; };
 		4230344927714C2700CE02D5 /* AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230344827714C2700CE02D5 /* AppointmentsView.swift */; };
 		4230344B27714C7300CE02D5 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230344A27714C7300CE02D5 /* AccountView.swift */; };
 		4230344D27714CAF00CE02D5 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230344C27714CAF00CE02D5 /* StatsView.swift */; };
+		4241A7B8284EEE9300A2BA8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4241A7B7284EEE9300A2BA8F /* GoogleService-Info.plist */; };
 		4251BA0227AEF99A00CDC44D /* EditAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251BA0127AEF99A00CDC44D /* EditAccountView.swift */; };
 		4258F18E279DE9A000193729 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4258F18D279DE9A000193729 /* FirebaseFirestore */; };
 		4261612527619B8B007261F1 /* SignInWithEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261612427619B8B007261F1 /* SignInWithEmailView.swift */; };
@@ -32,10 +32,10 @@
 
 /* Begin PBXFileReference section */
 		42188D1327C18DE7008DE27C /* SignInScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenViewModel.swift; sourceTree = "<group>"; };
-		421C76A32769752600BBD089 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4230344827714C2700CE02D5 /* AppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsView.swift; sourceTree = "<group>"; };
 		4230344A27714C7300CE02D5 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		4230344C27714CAF00CE02D5 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		4241A7B7284EEE9300A2BA8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4251BA0127AEF99A00CDC44D /* EditAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountView.swift; sourceTree = "<group>"; };
 		425FB97A27650AAA00A3EDCD /* Macaw-Pro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Macaw-Pro-Info.plist"; path = "Macaw Pro/Macaw-Pro-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4261612427619B8B007261F1 /* SignInWithEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithEmailView.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				42DE200B27697FF000C71B8F /* Macaw Pro.entitlements */,
-				421C76A32769752600BBD089 /* GoogleService-Info.plist */,
+				4241A7B7284EEE9300A2BA8F /* GoogleService-Info.plist */,
 				425FB97A27650AAA00A3EDCD /* Macaw-Pro-Info.plist */,
 				428FA03C274AB8710032589B /* Macaw_ProApp.swift */,
 				42F63BB727B35B0400EBD640 /* Views */,
@@ -237,7 +237,7 @@
 			files = (
 				42860DD02756FB60000D3CF8 /* Launch Screen.storyboard in Resources */,
 				428FA044274AB8720032589B /* Preview Assets.xcassets in Resources */,
-				421C76A42769752600BBD089 /* GoogleService-Info.plist in Resources */,
+				4241A7B8284EEE9300A2BA8F /* GoogleService-Info.plist in Resources */,
 				428FA041274AB8720032589B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
