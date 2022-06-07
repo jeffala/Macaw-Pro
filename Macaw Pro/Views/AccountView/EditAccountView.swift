@@ -1,12 +1,7 @@
-
-
 import SwiftUI
-
 
 struct EditAccountView: View {
     @StateObject private var viewModel = EditAccountViewModel()
-    
-    
     var body: some View {
         NavigationView {
             Form {
@@ -22,7 +17,6 @@ struct EditAccountView: View {
                     TextField("Profession", text: $viewModel.user.proType)
                         .autocapitalization(.none)
                 }
-                
                 Section("Services") {
                     TextField("Name of Service", text: $viewModel.services.service1Name)
                     TextField("Price of Service", value: $viewModel.services.service1Price, format: .currency(code: Locale.current.currencyCode ?? "USD"))
@@ -44,7 +38,6 @@ struct EditAccountView: View {
                     TextField("Price of Service", value: $viewModel.services.service5Price, format: .currency(code: Locale.current.currencyCode ?? "USD"))
                         .keyboardType(.decimalPad)
                 }
-                
                 // Due to 10 textfield limit per Section = new Section
                 Section("More Services") {
                     TextField("Name of Service", text: $viewModel.services.service6Name)
@@ -86,13 +79,11 @@ struct EditAccountView: View {
     }
 }
 
-
 struct EditProfileInfoView_Previews: PreviewProvider {
     static var previews: some View {
         EditAccountView()
     }
 }
-
 
 #if canImport(UIKit)
 extension View {
@@ -101,7 +92,3 @@ extension View {
     }
 }
 #endif
-
-
-
-

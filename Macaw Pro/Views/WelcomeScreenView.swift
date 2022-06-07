@@ -1,11 +1,7 @@
-
-
 import SwiftUI
 
 struct WelcomeScreenView: View {
     @Environment(\.userSignIn) private var userSignIn: Binding<Bool>
-    
-    
     var body: some View {
         NavigationView {
             VStack {
@@ -20,17 +16,12 @@ struct WelcomeScreenView: View {
                             .font(.largeTitle)
                             .bold()
                             .foregroundColor(Color.black).opacity(0.7)
-                        
                         Spacer().frame(height: 60)
-                        
-                        
                         NavigationLink(destination: SignInScreenView().environment(\.userSignIn, userSignIn)) {
                             PrimaryButton(title: "Get Started")
                         }
                         .padding()
-                        
                         Spacer().frame(height: 180)
-                        
                         VStack {
                             Text("Need to book an appointment? Use Macaw")
                                 .font(.caption)
@@ -44,13 +35,11 @@ struct WelcomeScreenView: View {
     }
 }
 
-
 struct WelcomeScreenView_Previews: PreviewProvider {
     static var previews: some View {
         WelcomeScreenView()
     }
 }
-
 
 struct PrimaryButton: View {
     var title: String
@@ -65,7 +54,3 @@ struct PrimaryButton: View {
             .cornerRadius(10)
     }
 }
-
-
-
-

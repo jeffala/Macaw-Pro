@@ -1,16 +1,12 @@
-
 import SwiftUI
 import CryptoKit
 import AuthenticationServices
 import Firebase
 
-
-
 class SignInScreenViewModel: ObservableObject {
     @Published var nonce = ""
     @Published var switchView = false
     
-     
     // MARK: Sign in with Apple
     // Helpers for Apple Login with Firebase...
     
@@ -69,7 +65,6 @@ class SignInScreenViewModel: ObservableObject {
     }
 }
 
-
 // MARK: Environment Value For Login
 
 struct LoginValueKey: EnvironmentKey {
@@ -82,4 +77,3 @@ extension EnvironmentValues {
         set { self[LoginValueKey.self] = newValue }
     }
 }
-

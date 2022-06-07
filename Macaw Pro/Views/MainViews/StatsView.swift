@@ -1,12 +1,7 @@
-
-
 import SwiftUI
 
-
 struct StatsView: View {
-    
     var body: some View {
-        
         Text("Stats View")
 
     }
@@ -17,4 +12,3 @@ struct StatsView_Previews: PreviewProvider {
         StatsView()
     }
 }
-
