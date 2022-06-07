@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 struct MainView: View {
@@ -11,13 +10,11 @@ struct MainView: View {
                         Image(systemName: "calendar")
                         Text("Appointments")
                     }
-                
                 StatsView()
                     .tabItem {
                         Image(systemName: "chart.bar")
                         Text("Stats")
                     }
-                
                 AccountView()
                     .tabItem {
                         Image(systemName: "person")

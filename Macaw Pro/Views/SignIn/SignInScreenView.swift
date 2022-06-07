@@ -1,5 +1,3 @@
-
-
 import SwiftUI
 import CryptoKit
 import AuthenticationServices
@@ -7,12 +5,10 @@ import FirebaseAuth
 import Firebase
 import GoogleSignIn
 
-
 struct SignInScreenView: View {
     @Environment(\.userSignIn) private var userSignIn: Binding<Bool>
     @StateObject private var viewModel = SignInScreenViewModel()
 
-    
     func authenticate(credential: ASAuthorizationAppleIDCredential) {
         // Getting Token...
         guard let token = credential.identityToken else {
@@ -74,9 +70,7 @@ struct SignInScreenView: View {
                         switch result {
                         case .success(let user):
                             
-                            
                             print("Signed in with Apple.")
-                            
                             
                             // Do login with Firebase...
                             guard let credential = user.credential as? ASAuthorizationAppleIDCredential else {
@@ -91,7 +85,6 @@ struct SignInScreenView: View {
                     }
                     .frame(width: 300, height: 50)
                     
-                    
                     // Google Sign in
                     Button {
                         handleSignin()
@@ -102,7 +95,6 @@ struct SignInScreenView: View {
                                 .aspectRatio(contentMode: .fit)
                                 .frame(width: 40, height: 40)
                                 .padding(.trailing)
-                            
                             
                             Text("Sign in with Google")
                                 .font(.title3)
@@ -116,12 +108,11 @@ struct SignInScreenView: View {
                             .stroke(Color.black, lineWidth: 0.70)
                     )
                     
-                    
                     // E-mail Sign in
-                    NavigationLink (destination: SignInWithEmailView().environment(\.userSignIn, userSignIn)) {
+                    NavigationLink(destination: SignInWithEmailView().environment(\.userSignIn, userSignIn)) {
                         HStack {
                             Spacer()
-                            Image(systemName:"envelope").imageScale(.large)
+                            Image(systemName: "envelope").imageScale(.large)
                                 .padding(.trailing)
                                 .foregroundColor(.black)
                             
@@ -155,7 +146,6 @@ struct SignInScreenView: View {
             }
         }
     }
-    
     
     // Handle Sign in for Google...
     func handleSignin() {
@@ -194,14 +184,12 @@ struct SignInScreenView: View {
                     return
                 }
                 
-                //Displaying User Name...
+                // Displaying User Name...
                 guard let user = result?.user else {
                     return
                 }
                 
-                
                 print(user.displayName ?? "Success!")
-                
                 
                 // Updating User as Logged in
                 userSignIn.wrappedValue = true
@@ -219,7 +207,6 @@ struct SignInScreenView_Previews: PreviewProvider {
         SignInScreenView()
     }
 }
-
 
 // Extending View to get screen bounds...
 extension View {
@@ -239,5 +226,3 @@ extension View {
         return root
     }
 }
-
-
