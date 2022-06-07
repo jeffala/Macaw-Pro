@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 import SwiftUI
 import Firebase
 import GoogleSignIn
