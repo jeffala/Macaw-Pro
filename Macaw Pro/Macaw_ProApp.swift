@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 import SwiftUI
 import Firebase
 import GoogleSignIn
@@ -18,7 +22,7 @@ struct MacawPro: App {
 //            WelcomeScreenView()
 //                .environment(\.userSignIn, $userSignIn)
 //            }
-            AccountView()
+            MainView()
         }
     }
 
