@@ -5,14 +5,15 @@ import GoogleSignIn
 struct AccountView: View {
     @Environment(\.userSignIn) private var userSignIn: Binding<Bool>
     @State private var isShowingPhotoPicker = false
+    
     // This is the Image that needs to go to FireStore
     @State private var avatarImage = UIImage(named: "default-avatar")!
-//    @State private var isLoggedOut = false
+    //    @State private var isLoggedOut = false
     var user: User = User(id: "000", firstName: "Jeff",
                           lastName: "Licona", gender: "Male",
                           genderOptions: ["Male", "Female", "Decline to answer"],
                           proType: "Barber", email: "jeffalalg94@gmail.com")
-
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 35 ) {
@@ -27,9 +28,7 @@ struct AccountView: View {
                     
                     VStack(spacing: 8) {
                         Text("\(user.firstName + " " + user.lastName)")
-                        
                         Text("\(user.proType)")
-
                     }
                 }
                 Text("My Services")

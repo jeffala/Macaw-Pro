@@ -18,7 +18,6 @@
 		4258F18E279DE9A000193729 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4258F18D279DE9A000193729 /* FirebaseFirestore */; };
 		4261612527619B8B007261F1 /* SignInWithEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261612427619B8B007261F1 /* SignInWithEmailView.swift */; };
 		426FC62F276AF9DD008AE6A5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426FC62E276AF9DD008AE6A5 /* MainView.swift */; };
-		42860DD02756FB60000D3CF8 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42860DCF2756FB60000D3CF8 /* Launch Screen.storyboard */; };
 		428FA03D274AB8710032589B /* Macaw_ProApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428FA03C274AB8710032589B /* Macaw_ProApp.swift */; };
 		428FA041274AB8720032589B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428FA040274AB8720032589B /* Assets.xcassets */; };
 		428FA044274AB8720032589B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 428FA043274AB8720032589B /* Preview Assets.xcassets */; };
@@ -40,7 +39,6 @@
 		425FB97A27650AAA00A3EDCD /* Macaw-Pro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Macaw-Pro-Info.plist"; path = "Macaw Pro/Macaw-Pro-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4261612427619B8B007261F1 /* SignInWithEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithEmailView.swift; sourceTree = "<group>"; };
 		426FC62E276AF9DD008AE6A5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		42860DCF2756FB60000D3CF8 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		428FA039274AB8710032589B /* Macaw Pro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Macaw Pro.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		428FA03C274AB8710032589B /* Macaw_ProApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macaw_ProApp.swift; sourceTree = "<group>"; };
 		428FA040274AB8720032589B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,7 +155,6 @@
 		42F63BB727B35B0400EBD640 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				42860DCF2756FB60000D3CF8 /* Launch Screen.storyboard */,
 				42BEA253275D66C300EC64A3 /* WelcomeScreenView.swift */,
 				42BEA258275D9ED000EC64A3 /* SignIn */,
 				42759CF7278A3D6100668B55 /* MainViews */,
@@ -235,7 +232,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42860DD02756FB60000D3CF8 /* Launch Screen.storyboard in Resources */,
 				428FA044274AB8720032589B /* Preview Assets.xcassets in Resources */,
 				4241A7B8284EEE9300A2BA8F /* GoogleService-Info.plist in Resources */,
 				428FA041274AB8720032589B /* Assets.xcassets in Resources */,
@@ -420,8 +416,6 @@
 				INFOPLIST_FILE = "Macaw-Pro-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -455,8 +449,6 @@
 				INFOPLIST_FILE = "Macaw-Pro-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
