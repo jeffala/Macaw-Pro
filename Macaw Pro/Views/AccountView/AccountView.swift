@@ -1,11 +1,17 @@
 import SwiftUI
 import Firebase
 import GoogleSignIn
+import PhotosUI
+
+struct Photo: Identifiable {
+    var data: Data
+    var id: String {
+        return data.base64EncodedString()
+    }
+}
 
 struct AccountView: View {
     @Environment(\.userSignIn) private var userSignIn: Binding<Bool>
-    @State private var isShowingPhotoPicker = false
-    
     // This is the Image that needs to go to FireStore
     @State private var avatarImage = UIImage(named: "default-avatar")!
     //    @State private var isLoggedOut = false
@@ -13,35 +19,26 @@ struct AccountView: View {
                           lastName: "Licona", gender: "Male",
                           genderOptions: ["Male", "Female", "Decline to answer"],
                           proType: "Barber", email: "jeffalalg94@gmail.com")
+    @State private var selectedPhotos = [PhotosPickerItem]()
+    @State private var photos = [Photo]()
     
     var body: some View {
-        NavigationView {
-            VStack(spacing: 35 ) {
-                HStack {
-                    Image(uiImage: avatarImage)
+        NavigationStack {
+            VStack {
+                PhotosPicker(selection: $selectedPhotos, selectionBehavior: .ordered,  matching: .images, preferredItemEncoding: .automatic) {
+                    Image("default-avatar")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 150, height: 150)
+                        .frame(width: 1204, height: 120)
                         .clipShape(Circle())
-                        .padding()
-                        .onTapGesture { isShowingPhotoPicker = true }
-                    
-                    VStack(spacing: 8) {
-                        Text("\(user.firstName + " " + user.lastName)")
-                        Text("\(user.proType)")
-                    }
                 }
-                Text("My Services")
-                    .font(.title2)
-                Spacer()
             }
-            .navigationTitle("Account")
-            .sheet(isPresented: $isShowingPhotoPicker, content: {
-                PhotoPicker(avatarImage: $avatarImage)
-            })
+            .navigationTitle("Account profile")
+            
         }
     }
 }
+
 
 struct AccountView_Previews: PreviewProvider {
     static var previews: some View {
