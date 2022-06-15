@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42188D1427C18DE7008DE27C /* SignInScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42188D1327C18DE7008DE27C /* SignInScreenViewModel.swift */; };
+		421A2E8628596DA10011BDCC /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421A2E8528596DA10011BDCC /* PhotoPicker.swift */; };
 		421C76A9276976ED00BBD089 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 421C76A8276976ED00BBD089 /* FirebaseAuth */; };
 		4225653427B8705E00C18CCD /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4225653327B8705E00C18CCD /* FirebaseFirestoreSwift-Beta */; };
 		4230344927714C2700CE02D5 /* AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230344827714C2700CE02D5 /* AppointmentsView.swift */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		42188D1327C18DE7008DE27C /* SignInScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenViewModel.swift; sourceTree = "<group>"; };
+		421A2E8528596DA10011BDCC /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		4230344827714C2700CE02D5 /* AppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsView.swift; sourceTree = "<group>"; };
 		4230344A27714C7300CE02D5 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		4230344C27714CAF00CE02D5 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 		4251BA0027AEF95700CDC44D /* AccountView */ = {
 			isa = PBXGroup;
 			children = (
+				421A2E8528596DA10011BDCC /* PhotoPicker.swift */,
 				4230344A27714C7300CE02D5 /* AccountView.swift */,
 				4251BA0127AEF99A00CDC44D /* EditAccountView.swift */,
 				42D804B327BF44AC00934DE0 /* EditAccountViewModel.swift */,
@@ -275,6 +278,7 @@
 				4230344B27714C7300CE02D5 /* AccountView.swift in Sources */,
 				4230344927714C2700CE02D5 /* AppointmentsView.swift in Sources */,
 				42BEA25A275DA3E100EC64A3 /* SignInScreenView.swift in Sources */,
+				421A2E8628596DA10011BDCC /* PhotoPicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -387,7 +391,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -416,6 +420,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -449,6 +454,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
