@@ -1,6 +1,6 @@
 import SwiftUI
 import Firebase
-import GoogleSignIn
+//import GoogleSignIn
 
 struct AccountView: View {
     @Environment(\.userSignIn) private var userSignIn: Binding<Bool>

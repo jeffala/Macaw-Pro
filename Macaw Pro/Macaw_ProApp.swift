@@ -1,6 +1,6 @@
 import SwiftUI
 import Firebase
-import GoogleSignIn
+//import GoogleSignIn
 
 @main
 struct MacawPro: App {
@@ -22,9 +22,9 @@ struct MacawPro: App {
         }
     }
 
-    func application(_ application: UIApplication, open url: URL,
-                     options: [UIApplication.OpenURLOptionsKey: Any])
-      -> Bool {
-      return GIDSignIn.sharedInstance.handle(url)
-    }
+//    func application(_ application: UIApplication, open url: URL,
+//                     options: [UIApplication.OpenURLOptionsKey: Any])
+//      -> Bool {
+//      return GIDSignIn.sharedInstance.handle(url)
+//    }
 }
