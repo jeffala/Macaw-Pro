@@ -1,11 +1,11 @@
-//import SwiftUI
-//import CryptoKit
-//import AuthenticationServices
-//import FirebaseAuth
-//import Firebase
-////import GoogleSignIn
+// import SwiftUI
+// import CryptoKit
+// import AuthenticationServices
+// import FirebaseAuth
+// import Firebase
+// //import GoogleSignIn
 //
-//struct SignInScreenView: View {
+// struct SignInScreenView: View {
 //    @Environment(\.userSignIn) private var userSignIn: Binding<Bool>
 //    @StateObject private var viewModel = SignInScreenViewModel()
 //
@@ -200,16 +200,16 @@
 //            }
 //        }
 //    }
-//}
+// }
 //
-//struct SignInScreenView_Previews: PreviewProvider {
+// struct SignInScreenView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        SignInScreenView()
 //    }
-//}
+// }
 //
-//// Extending View to get screen bounds...
-//extension View {
+// // Extending View to get screen bounds...
+// extension View {
 //    func getRect() -> CGRect {
 //        return UIScreen.main.bounds
 //    }
@@ -225,4 +225,4 @@
 //        }
 //        return root
 //    }
-//}
+// }

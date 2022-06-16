@@ -1,6 +1,6 @@
 import SwiftUI
 import Firebase
-//import GoogleSignIn
+// import GoogleSignIn
 
 @main
 struct MacawPro: App {

@@ -67,8 +67,8 @@
 		4251BA0027AEF95700CDC44D /* AccountView */ = {
 			isa = PBXGroup;
 			children = (
-				421A2E8528596DA10011BDCC /* PhotoPicker.swift */,
 				4230344A27714C7300CE02D5 /* AccountView.swift */,
+				421A2E8528596DA10011BDCC /* PhotoPicker.swift */,
 				4251BA0127AEF99A00CDC44D /* EditAccountView.swift */,
 				42D804B327BF44AC00934DE0 /* EditAccountViewModel.swift */,
 			);
