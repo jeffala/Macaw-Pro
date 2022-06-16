@@ -1,18 +1,39 @@
 import SwiftUI
 import Firebase
-import GoogleSignIn
+// import GoogleSignIn
 
 struct AccountView: View {
     @Environment(\.userSignIn) private var userSignIn: Binding<Bool>
     //    @State private var isLoggedOut = false
+    @State private var profileImage = UIImage(named: "default-avatar")!
+    @State private var isShowingPhotoPicker = false
     var user: User = User(id: "000", firstName: "Jeff",
                           lastName: "Licona", gender: "Male",
                           genderOptions: ["Male", "Female", "Decline to answer"],
                           proType: "Barber", email: "jeffalalg94@gmail.com")
     
     var body: some View {
-        Text("Fill up")
-
+        NavigationView {
+            VStack {
+                HStack {
+                    Image(uiImage: profileImage)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 150, height: 150)
+                        .clipShape(Circle())
+                        .onTapGesture {
+                            PhotoPicker()
+                        }
+                    Spacer()
+                }
+                .padding(30)
+                .navigationTitle("Account Profile")
+                .sheet(isPresented: $isShowingPhotoPicker) {
+                    
+                }
+                Spacer()
+            }
+        }
     }
 }
 
