@@ -4,36 +4,26 @@ import Firebase
 
 struct AccountView: View {
     @Environment(\.userSignIn) private var userSignIn: Binding<Bool>
-    //    @State private var isLoggedOut = false
-    @State private var profileImage = UIImage(named: "default-avatar")!
-    @State private var isShowingPhotoPicker = false
+    // @State private var isLoggedOut = false
+    
     var user: User = User(id: "000", firstName: "Jeff",
                           lastName: "Licona", gender: "Male",
                           genderOptions: ["Male", "Female", "Decline to answer"],
                           proType: "Barber", email: "jeffalalg94@gmail.com")
-    
+    // Edit account Image view. 
     var body: some View {
         NavigationView {
             VStack {
                 HStack {
-                    Image(uiImage: profileImage)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 150, height: 150)
-                        .clipShape(Circle())
-                        .onTapGesture {
-                            PhotoPicker()
-                        }
+                    AccountImageView()
+                        .padding()
                     Spacer()
-                }
-                .padding(30)
-                .navigationTitle("Account Profile")
-                .sheet(isPresented: $isShowingPhotoPicker) {
                     
                 }
                 Spacer()
             }
-        }
+            .navigationTitle("Account")
+        }  // navigation bar button for edditing profile.
     }
 }
 
