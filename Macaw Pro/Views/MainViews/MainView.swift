@@ -15,10 +15,10 @@ struct MainView: View {
                         Image(systemName: "chart.bar")
                         Text("Stats")
                     }
-                AccountView()
+                ProfileView()
                     .tabItem {
                         Image(systemName: "person")
-                        Text("Account")
+                        Text("Profile")
                     }
             }
             .navigationBarBackButtonHidden(true)
