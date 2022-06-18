@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42188D1427C18DE7008DE27C /* SignInScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42188D1327C18DE7008DE27C /* SignInScreenViewModel.swift */; };
-		421A2E8628596DA10011BDCC /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421A2E8528596DA10011BDCC /* PhotoPicker.swift */; };
+		421A2E8628596DA10011BDCC /* PhotoPickerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421A2E8528596DA10011BDCC /* PhotoPickerModel.swift */; };
 		421C76A9276976ED00BBD089 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 421C76A8276976ED00BBD089 /* FirebaseAuth */; };
 		4225653427B8705E00C18CCD /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4225653327B8705E00C18CCD /* FirebaseFirestoreSwift-Beta */; };
 		4230344927714C2700CE02D5 /* AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230344827714C2700CE02D5 /* AppointmentsView.swift */; };
@@ -26,11 +26,12 @@
 		42BEA254275D66C300EC64A3 /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BEA253275D66C300EC64A3 /* WelcomeScreenView.swift */; };
 		42BEA25A275DA3E100EC64A3 /* SignInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BEA259275DA3E100EC64A3 /* SignInScreenView.swift */; };
 		42D804B427BF44AC00934DE0 /* EditAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D804B327BF44AC00934DE0 /* EditAccountViewModel.swift */; };
+		42F1353C285E3EE100F59336 /* AccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1353B285E3EE100F59336 /* AccountImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		42188D1327C18DE7008DE27C /* SignInScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenViewModel.swift; sourceTree = "<group>"; };
-		421A2E8528596DA10011BDCC /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		421A2E8528596DA10011BDCC /* PhotoPickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerModel.swift; sourceTree = "<group>"; };
 		4230344827714C2700CE02D5 /* AppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsView.swift; sourceTree = "<group>"; };
 		4230344A27714C7300CE02D5 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		4230344C27714CAF00CE02D5 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 		42BEA259275DA3E100EC64A3 /* SignInScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenView.swift; sourceTree = "<group>"; };
 		42D804B327BF44AC00934DE0 /* EditAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountViewModel.swift; sourceTree = "<group>"; };
 		42DE200B27697FF000C71B8F /* Macaw Pro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Macaw Pro.entitlements"; sourceTree = "<group>"; };
+		42F1353B285E3EE100F59336 /* AccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				4230344A27714C7300CE02D5 /* AccountView.swift */,
-				421A2E8528596DA10011BDCC /* PhotoPicker.swift */,
+				42F1353B285E3EE100F59336 /* AccountImageView.swift */,
 				4251BA0127AEF99A00CDC44D /* EditAccountView.swift */,
 				42D804B327BF44AC00934DE0 /* EditAccountViewModel.swift */,
 			);
@@ -78,6 +80,7 @@
 		4258F192279F373100193729 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				421A2E8528596DA10011BDCC /* PhotoPickerModel.swift */,
 				429228C027B086F100606251 /* UserAccountModel.swift */,
 			);
 			path = Models;
@@ -270,11 +273,12 @@
 				42BEA254275D66C300EC64A3 /* WelcomeScreenView.swift in Sources */,
 				428FA03D274AB8710032589B /* Macaw_ProApp.swift in Sources */,
 				4230344D27714CAF00CE02D5 /* StatsView.swift in Sources */,
+				42F1353C285E3EE100F59336 /* AccountImageView.swift in Sources */,
 				42188D1427C18DE7008DE27C /* SignInScreenViewModel.swift in Sources */,
 				4230344B27714C7300CE02D5 /* AccountView.swift in Sources */,
 				4230344927714C2700CE02D5 /* AppointmentsView.swift in Sources */,
 				42BEA25A275DA3E100EC64A3 /* SignInScreenView.swift in Sources */,
-				421A2E8628596DA10011BDCC /* PhotoPicker.swift in Sources */,
+				421A2E8628596DA10011BDCC /* PhotoPickerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
