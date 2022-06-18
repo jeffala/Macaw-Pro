@@ -2,7 +2,7 @@ import Foundation
 import Firebase
 import FirebaseFirestore
 
-class EditAccountViewModel: ObservableObject {
+class EditProfileViewModel: ObservableObject {
     @Published var user = User()
     @Published var services = Services()
     

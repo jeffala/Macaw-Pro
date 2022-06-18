@@ -12,10 +12,10 @@
 		421C76A9276976ED00BBD089 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 421C76A8276976ED00BBD089 /* FirebaseAuth */; };
 		4225653427B8705E00C18CCD /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 4225653327B8705E00C18CCD /* FirebaseFirestoreSwift-Beta */; };
 		4230344927714C2700CE02D5 /* AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230344827714C2700CE02D5 /* AppointmentsView.swift */; };
-		4230344B27714C7300CE02D5 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230344A27714C7300CE02D5 /* AccountView.swift */; };
+		4230344B27714C7300CE02D5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230344A27714C7300CE02D5 /* ProfileView.swift */; };
 		4230344D27714CAF00CE02D5 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230344C27714CAF00CE02D5 /* StatsView.swift */; };
 		4241A7B8284EEE9300A2BA8F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4241A7B7284EEE9300A2BA8F /* GoogleService-Info.plist */; };
-		4251BA0227AEF99A00CDC44D /* EditAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251BA0127AEF99A00CDC44D /* EditAccountView.swift */; };
+		4251BA0227AEF99A00CDC44D /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4251BA0127AEF99A00CDC44D /* EditProfileView.swift */; };
 		4258F18E279DE9A000193729 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4258F18D279DE9A000193729 /* FirebaseFirestore */; };
 		4261612527619B8B007261F1 /* SignInWithEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4261612427619B8B007261F1 /* SignInWithEmailView.swift */; };
 		426FC62F276AF9DD008AE6A5 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426FC62E276AF9DD008AE6A5 /* MainView.swift */; };
@@ -25,18 +25,18 @@
 		429228C127B086F100606251 /* UserAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429228C027B086F100606251 /* UserAccountModel.swift */; };
 		42BEA254275D66C300EC64A3 /* WelcomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BEA253275D66C300EC64A3 /* WelcomeScreenView.swift */; };
 		42BEA25A275DA3E100EC64A3 /* SignInScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BEA259275DA3E100EC64A3 /* SignInScreenView.swift */; };
-		42D804B427BF44AC00934DE0 /* EditAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D804B327BF44AC00934DE0 /* EditAccountViewModel.swift */; };
-		42F1353C285E3EE100F59336 /* AccountImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1353B285E3EE100F59336 /* AccountImageView.swift */; };
+		42D804B427BF44AC00934DE0 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D804B327BF44AC00934DE0 /* EditProfileViewModel.swift */; };
+		42F1353C285E3EE100F59336 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F1353B285E3EE100F59336 /* ProfileImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		42188D1327C18DE7008DE27C /* SignInScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenViewModel.swift; sourceTree = "<group>"; };
 		421A2E8528596DA10011BDCC /* PhotoPickerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerModel.swift; sourceTree = "<group>"; };
 		4230344827714C2700CE02D5 /* AppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsView.swift; sourceTree = "<group>"; };
-		4230344A27714C7300CE02D5 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		4230344A27714C7300CE02D5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		4230344C27714CAF00CE02D5 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		4241A7B7284EEE9300A2BA8F /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		4251BA0127AEF99A00CDC44D /* EditAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountView.swift; sourceTree = "<group>"; };
+		4251BA0127AEF99A00CDC44D /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		425FB97A27650AAA00A3EDCD /* Macaw-Pro-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Macaw-Pro-Info.plist"; path = "Macaw Pro/Macaw-Pro-Info.plist"; sourceTree = SOURCE_ROOT; };
 		4261612427619B8B007261F1 /* SignInWithEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithEmailView.swift; sourceTree = "<group>"; };
 		426FC62E276AF9DD008AE6A5 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -47,9 +47,9 @@
 		429228C027B086F100606251 /* UserAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAccountModel.swift; sourceTree = "<group>"; };
 		42BEA253275D66C300EC64A3 /* WelcomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenView.swift; sourceTree = "<group>"; };
 		42BEA259275DA3E100EC64A3 /* SignInScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInScreenView.swift; sourceTree = "<group>"; };
-		42D804B327BF44AC00934DE0 /* EditAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAccountViewModel.swift; sourceTree = "<group>"; };
+		42D804B327BF44AC00934DE0 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		42DE200B27697FF000C71B8F /* Macaw Pro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Macaw Pro.entitlements"; sourceTree = "<group>"; };
-		42F1353B285E3EE100F59336 /* AccountImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountImageView.swift; sourceTree = "<group>"; };
+		42F1353B285E3EE100F59336 /* ProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,15 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4251BA0027AEF95700CDC44D /* AccountView */ = {
+		4251BA0027AEF95700CDC44D /* ProfileViews */ = {
 			isa = PBXGroup;
 			children = (
-				4230344A27714C7300CE02D5 /* AccountView.swift */,
-				42F1353B285E3EE100F59336 /* AccountImageView.swift */,
-				4251BA0127AEF99A00CDC44D /* EditAccountView.swift */,
-				42D804B327BF44AC00934DE0 /* EditAccountViewModel.swift */,
+				42F1353B285E3EE100F59336 /* ProfileImageView.swift */,
+				4251BA0127AEF99A00CDC44D /* EditProfileView.swift */,
+				42D804B327BF44AC00934DE0 /* EditProfileViewModel.swift */,
 			);
-			path = AccountView;
+			path = ProfileViews;
 			sourceTree = "<group>";
 		};
 		4258F192279F373100193729 /* Models */ = {
@@ -92,6 +91,7 @@
 				426FC62E276AF9DD008AE6A5 /* MainView.swift */,
 				4230344827714C2700CE02D5 /* AppointmentsView.swift */,
 				4230344C27714CAF00CE02D5 /* StatsView.swift */,
+				4230344A27714C7300CE02D5 /* ProfileView.swift */,
 			);
 			path = MainViews;
 			sourceTree = "<group>";
@@ -159,7 +159,7 @@
 				42BEA253275D66C300EC64A3 /* WelcomeScreenView.swift */,
 				42BEA258275D9ED000EC64A3 /* SignIn */,
 				42759CF7278A3D6100668B55 /* MainViews */,
-				4251BA0027AEF95700CDC44D /* AccountView */,
+				4251BA0027AEF95700CDC44D /* ProfileViews */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -266,16 +266,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				426FC62F276AF9DD008AE6A5 /* MainView.swift in Sources */,
-				42D804B427BF44AC00934DE0 /* EditAccountViewModel.swift in Sources */,
+				42D804B427BF44AC00934DE0 /* EditProfileViewModel.swift in Sources */,
 				4261612527619B8B007261F1 /* SignInWithEmailView.swift in Sources */,
 				429228C127B086F100606251 /* UserAccountModel.swift in Sources */,
-				4251BA0227AEF99A00CDC44D /* EditAccountView.swift in Sources */,
+				4251BA0227AEF99A00CDC44D /* EditProfileView.swift in Sources */,
 				42BEA254275D66C300EC64A3 /* WelcomeScreenView.swift in Sources */,
 				428FA03D274AB8710032589B /* Macaw_ProApp.swift in Sources */,
 				4230344D27714CAF00CE02D5 /* StatsView.swift in Sources */,
-				42F1353C285E3EE100F59336 /* AccountImageView.swift in Sources */,
+				42F1353C285E3EE100F59336 /* ProfileImageView.swift in Sources */,
 				42188D1427C18DE7008DE27C /* SignInScreenViewModel.swift in Sources */,
-				4230344B27714C7300CE02D5 /* AccountView.swift in Sources */,
+				4230344B27714C7300CE02D5 /* ProfileView.swift in Sources */,
 				4230344927714C2700CE02D5 /* AppointmentsView.swift in Sources */,
 				42BEA25A275DA3E100EC64A3 /* SignInScreenView.swift in Sources */,
 				421A2E8628596DA10011BDCC /* PhotoPickerModel.swift in Sources */,

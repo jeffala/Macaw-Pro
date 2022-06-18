@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct AccountImageView: View {
+struct ProfileImageView: View {
     @State private var isShowingPhotoPicker = false
     
     // This is the image that goes to the server.
@@ -10,7 +10,7 @@ struct AccountImageView: View {
             Image(uiImage: profileImage)
                 .resizable()
                 .scaledToFit()
-                .frame(width: 150, height: 150)
+                .frame(width: 120, height: 120)
                 .clipShape(Circle())
                 .onTapGesture { isShowingPhotoPicker = true }
         .sheet(isPresented: $isShowingPhotoPicker) {
@@ -20,6 +20,6 @@ struct AccountImageView: View {
 }
 struct ProfileImageView_Previews: PreviewProvider {
     static var previews: some View {
-        AccountImageView()
+        ProfileImageView()
     }
 }
